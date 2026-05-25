@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  
+  <link rel="stylesheet" href="bootstrap-5.0.0-dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
+  <link rel="stylesheet" href="card2.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="container-fluid px-5 position-relative" style="background-color: black; min-height: 100vh; overflow: hidden;">
+    
+   <header class="d-flex justify-content-end align-items-center pt-3 position-relative" style="z-index: 10;">
+      <nav class="d-flex gap-5 custom-nav-container">
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link custom-nav-link active" href="../pages 1/index.utama.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link custom-nav-link active" href="index.kedua.html">About</a>
+          </li>
+          <li class="nav-item-skill">
+            <a class="nav-link custom-nav-link-skill active" href="index.ketiga.html">HTML</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link custom-nav-link active" href="index.keempat.html">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link custom-nav-link active" href="index.kelima.html">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    
+    <div class="bi bi-filetype-css icon-css-glowing"></div>
+
+    <div class="row flex-grow-1 align-items-center w-100 mx-lg-5" style="margin-top: 220px;">
+      <div class="col-lg-6 px-4">
+        <div class="style-muhammad">CSS</div>
+        <span class="style-andika mb-2" id="typewriter">BEGINER</span>
+
+        <div class="card-level">
+          <div class="text-level">Level Kemampuan</div>
+          <div class="line-level"></div>
+          <div class="bold-level">80% Pengalaman</div>
+        </div>
+
+        <a href="index.ketiga.html">
+          <button type="button" class="button-back">
+            < BACK
+          </button>
+        </a>
+      </div>
+
+      <div class="col-lg-5 px-4 d-flex flex-column align-items-center align-self-start" style="margin-top: -160px;">
+        <div class="card card-content">
+          <div class="d-flex">
+            <div class="line-yellow"></div>
+            <div class="line-white"></div>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">CSS</h5>
+            <p class="card-text">
+              Dalam bahasa CSS saya memiliki pengalaman yang cukup baik, saya sudah mempelajari CSS selama 1 tahun dan sudah membuat beberapa project menggunakan CSS. Saya juga sudah memahami konsep dasar CSS seperti selector, property, dan value. Saya juga sudah mempelajari beberapa framework CSS seperti Bootstrap yang dapat membantu dalam membuat tampilan website yang responsif dan menarik.
+            </p>
+            <div class="d-flex accept-row" style="margin-left: 20px; margin-top: 20px; width: calc(100% - 40px);">
+              <div class="accept-item">
+                <div class="icon-accept" style="--accept-color: black;"></div>
+                <div class="accept-label">BASIC</div>
+              </div>
+              <div class="accept-item">
+                <div class="icon-accept" style="--accept-color: black;"></div>
+                <div class="accept-label">MEDIUM</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="bootstrap-5.0.0-dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+      return new bootstrap.Tooltip(tooltipTriggerEl);
+    });
+
+    document.addEventListener("DOMContentLoaded", function () {
+      const textToType = "BEGINER";
+      const typeWriterElement = document.getElementById("typewriter");
+
+      let charIndex = 0;
+      let isDeleting = false;
+
+      function typeEffect() {
+        const currentText = textToType.substring(0, charIndex);
+        typeWriterElement.innerHTML = currentText + '<span class="cursor">|</span>';
+
+        let typeSpeed = isDeleting ? 100 : 150;
+
+        if (!isDeleting && charIndex < textToType.length) {
+          charIndex++;
+          setTimeout(typeEffect, typeSpeed);
+        } else if (isDeleting && charIndex > 0) {
+          charIndex--;
+          setTimeout(typeEffect, typeSpeed);
+        } else {
+          isDeleting = !isDeleting;
+          let pauseTime = isDeleting ? 2000 : 500;
+          setTimeout(typeEffect, pauseTime);
+        }
+      }
+
+      setTimeout(typeEffect, 500);
+    });
+  </script>
+</body>
+</html>

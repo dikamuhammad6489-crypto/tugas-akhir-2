@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  
+  <link rel="stylesheet" href="bootstrap-5.0.0-dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
+  <link rel="stylesheet" href="style.utama1.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Coiny&family=Funnel+Display:wght@300..800&family=Lexend:wght@100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Shadows+Into+Light+Two&family=Tangerine&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="container-fluid px-5" style="background-color: black; min-height: 100vh">
+    
+    <header class="d-flex justify-content-end align-items-center pt-3">
+      <nav class="d-flex gap-5 custom-nav-container">
+        <ul class="nav">
+          <li class="nav-item-home">
+            <a class="nav-link custom-nav-link-home active" href="#halaman-welcome">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link custom-nav-link active" href="index.kedua.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link custom-nav-link active" href="index.ketiga.html">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link custom-nav-link active" href="index.keempat.html">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link custom-nav-link active" href="index.kelima.html">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="row flex-grow-1 align-items-center w-100 mx-lg-5" style="margin-top: 100px;">
+      <div class="col-lg-6 px-4">
+        <div class="style-rekayasa mb-3">REKAYASA PERANGKAT LUNAK</div>
+        <div class="style-muhammad">Muhammad</div>
+        <span class="style-andika mb-2" id="typewriter">FATHIR ANDIKA</span>
+        <span class="cursor"></span>
+        <div class="style-slogan mb-4">Ingin menjadi yang terbaik untuk diri sendiri</div>
+        
+        <div class="d-flex gap-3 mt-4">
+          <a href="../index.keempat.html">
+            <button type="button" class="style-button-welcome1">Lihat Portofolio</button>
+          </a>
+          <a href="../index.kelima.html">
+            <button type="button" class="style-button-welcome2">Hubungi Saya</button>
+          </a>
+        </div>
+      </div>
+
+      <div class="col-lg-5 px-4 d-flex flex-column align-items-center mt-5 mt-lg-0">
+        <div class="code-window p-4 w-60">
+          <div class="window-dots mb-3 d-flex gap-2">
+            <span style="width: 12px; height: 12px; background: #ff5f56; border-radius: 50%; display: inline-block;"></span>
+            <span style="width: 12px; height: 12px; background: #ffbd2e; border-radius: 50%; display: inline-block;"></span>
+            <span style="width: 12px; height: 12px; background: #27c93f; border-radius: 50%; display: inline-block;"></span>
+          </div>
+          
+          <pre class="m-0" style="color: #ccc; font-family: monospace; font-size: 15px">
+<span style="color: ffcc00;">const</span> student = {
+  name: <span style="color: #66d9ef;">"Muhammad Fathir Andika"</span>,
+  age: <span style="color: #66d9ef;">21</span>,
+  major: <span style="color: #66d9ef;">"Rekayasa Perangkat Lunak"</span>,
+  skill: <span style="color: #66d9ef;">"html"</span>,<span style="color: #a5d6ff">"edit"</span>, <span style="color: #a5d6ff">"css"</span>]
+};
+<span style="color: #ffcc00;">console</span>.Log(student.name);</pre>
+        </div>
+
+        <div class="d-flex flex-wrap gap-3 mt-4 justify-content-center">
+          <span class="badge p-2 button-skill">HTML</span>
+          <span class="badge p-2 button-skill">CSS</span>
+          <span class="badge p-2 button-skill">JavaScript</span>
+          <span class="badge p-2 button-skill">Python</span>
+        </div>
+      </div>
+    </div>
+
+    <a href="index.kedua.html">
+      <button type="button" class="button-next" data-bs-toggle="tooltip" data-bs-placement="top" title="Halaman Selanjutnya">
+        <span class="arrow-icon"></span> >
+      </button>
+    </a>
+
+    <a href="index.kelima.html">
+      <button type="button" class="button-back" data-bs-toggle="tooltip" data-bs-placement="top" title="Halaman Sebelumnya">
+        <span class="arrow-icon"></span> <
+      </button>
+    </a>
+  </div>
+
+  <script src="bootstrap-5.0.0-dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+      return new bootstrap.Tooltip(tooltipTriggerEl);
+    });
+
+    document.addEventListener("DOMContentLoaded", function () {
+      const textToType = "FATHIR ANDIKA";
+      const typeWriterElement = document.getElementById("typewriter");
+
+      let charIndex = 0;
+      let isDeleting = false;
+
+      function typeEffect() {
+        const currentText = textToType.substring(0, charIndex);
+        typeWriterElement.innerHTML = currentText + '<span class="cursor">|</span>';
+
+        let typeSpeed = isDeleting ? 100 : 150;
+
+        if (!isDeleting && charIndex < textToType.length) {
+          charIndex++;
+          setTimeout(typeEffect, typeSpeed);
+        } else if (isDeleting && charIndex > 0) {
+          charIndex--;
+          setTimeout(typeEffect, typeSpeed);
+        } else {
+          isDeleting = !isDeleting;
+          let pauseTime = isDeleting ? 2000 : 500;
+          setTimeout(typeEffect, pauseTime);
+        }
+      }
+
+      setTimeout(typeEffect, 500);
+    });
+  </script> 
+</body>
+</html>

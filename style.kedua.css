@@ -1,0 +1,512 @@
+body {
+  background-color: black;
+  margin: 0;
+  animation: fadeIn 1.5s ease-out;
+}
+
+.background-welcome {
+  background-color: black;
+  height: 600px;
+}
+
+.custom-nav-container {
+  background-color: black;
+  border: 1px solid yellow;
+  border-radius: 10px;
+  display: inline-flex;
+  align-items: center;
+  width: auto;
+  height: 60px;
+  padding: 1px 3px;
+}
+
+.custom-nav-link {
+  color: yellow;
+  font-family: 'Poppins';
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: bold;
+  filter: brightness(100%);
+  transition: color 0.3s ease, filter 0.3s ease;
+}
+
+.custom-nav-link:hover {
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+  filter: brightness(200%);
+  transition: color 0.3s ease, filter 0.3s ease;
+}
+
+.nav-item {
+  margin-right: 5px;
+  margin-left: 5px;
+  background-color: black;
+  color: yellow;
+  border-radius: 10px;
+  width: auto;
+  height: 40px;
+  box-sizing: border-box;
+  filter: brightness(100%);
+  transition: background-color 0.5s ease, color 0.3s ease, filter 0.3s ease;
+}
+
+.nav-item:hover {
+  background-color: yellow;
+  color: black;
+  border-radius: 10px;
+  width: auto;
+  height: 40px;
+  box-sizing: border-box;
+  filter: brightness(200%);
+  transition: background-color 0.5s ease, color 0.3s ease;
+}
+
+.nav-item-about:hover {
+  width: auto;
+  background-color: black;
+  color: yellow;
+  border-radius: 10px;
+  box-sizing: border-box;
+  filter: brightness(100%);
+  transition: background-color 0.5s ease, color 0.3s ease, filter 0.3s ease;
+}
+
+.nav-item-about {
+  width: auto;
+  background-color: yellow;
+  color: black;
+  border-radius: 10px;
+  box-sizing: border-box;
+  filter: brightness(100%);
+  transition: background-color 0.5s ease, color 0.3s ease;
+}
+
+.custom-nav-link-about:hover {
+  color: yellow;
+  text-decoration: none;
+  font-weight: bold;
+  filter: brightness(200%);
+  transition: color 0.3s ease, filter 0.3s ease;
+}
+
+.custom-nav-link-about {
+  font-size: 16px;
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+  filter: brightness(200%);
+  transition: color 0.3s ease, filter 0.3s ease;
+}
+
+.style-rekayasa {
+  background-color: yellow;
+  background-size: cover;
+  border-radius: 10px;
+  width: 210px;
+  height: 30px;
+  color: black;
+  font-family: 'Roboto Condensed';
+  font-size: 14px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: inline-block;
+  font-weight: bold;
+  padding: 5px 15px;
+}
+
+.style-muhammad {
+  line-height: 1;
+  font-family: 'Poppins';
+  font-size: 60px;
+  font-weight: bold;
+  color: yellow;
+  transition: color 0.5s ease-out;
+  animation: warnaWarni1 5s linear infinite;
+}
+
+@keyframes warnaWarni1 {
+  0% { color: white; }
+  50% { color: yellow; }
+  100% { color: white; }
+}
+
+.style-andika {
+  font-family: 'Poppins';
+  font-size: 60px;
+  font-weight: bold;
+  color: white;
+  transition: color 0.5s ease-out;
+  animation: warnaWarni2 5s linear infinite;
+}
+
+@keyframes warnaWarni2 {
+  0% { color: yellow; }
+  50% { color: white; }
+  100% { color: yellow; }
+}
+
+.cursor {
+  color: #FFFF00;
+  font-weight: bold;
+  animation: blink 0.8s infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.style-slogan {
+  text-align: justify;
+  font-weight: lighter;
+  font-family: 'Poppins';
+  font-size: 15px;
+  color: white;
+  max-width: 450px; 
+  line-height: 1.6;
+}
+
+.stik-yellow {
+  background-color: yellow;
+  width: 6px;
+  height: 60px;
+}
+
+.style-expert-heading {
+  margin-left: 10px;
+  font-size: 25px;
+  color: yellow;
+  font-weight: bold;
+  font-family: 'Poppins';
+}
+
+.style-expert-text {
+  position: absolute;
+  bottom: 45px;
+  margin-left: 10px;
+  font-size: 10px;
+  color: #555;
+  font-family: 'Arial';
+}
+
+.custom-gap {
+  gap: 110px;
+}
+
+.style-riwayat {
+  color: yellow;
+  font-weight: bold;
+  font-family: 'Poppins';
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+
+.timeline-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 80px;
+  padding-bottom: 60px;
+}
+
+.timeline-section .row {
+  justify-content: center;
+}
+
+.timeline-section .col-lg-8 {
+  max-width: 760px;
+}
+
+.timeline-item {
+  position: relative;
+  animation: fadeIn 1.2s ease;
+  margin-bottom: 2.5rem;
+}
+
+.timeline-year {
+  color: yellow;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.1rem;
+  letter-spacing: 0.8px;
+}
+
+.timeline-card {
+  width: 300px;
+  height: 100%;
+  background-color: #0f0f0f;
+  border: 1px solid #2b2b2b;
+  border-radius: 12px;
+  padding: 16px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: all 0.4s ease-out;
+}
+
+.timeline-header {
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.timeline-card:hover {
+  background-color: yellow;
+  box-shadow: 0px 5px 10px rgb(255, 255, 0);
+  transform: translate(0px, -4px);
+  transition: all 0.4s ease-out;
+}
+
+.timeline-card:hover .timeline-header {
+  color: black;
+  transition: all 0.3s ease;
+}
+
+.timeline-text {
+  font-family: 'Poppins', sans-serif;
+  color: #666;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.timeline-card:hover .timeline-text {
+  color: black;
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 992px) {
+  .timeline-item {
+    left: 0 !important;
+  }
+}
+
+.timeline-container {
+  max-width: 1050px;
+  margin: 0 auto;
+}
+
+.timeline-line-col {
+  position: relative;
+  min-height: 200px;
+}
+
+.timeline-dot {
+  position: absolute;
+  top: 10%;
+  left: -200%;
+  transform: translate(-50%, -50%);
+  width: 14px;
+  height: 14px;
+  background-color: yellow;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(255,204,0,0.6);
+  z-index: 2;
+}
+
+.timeline-line {
+  position: absolute;
+  top: 10%;
+  bottom: -2.5rem;
+  left: -200%;
+  transform: translateX(-50%);
+  width: 2px;
+  background-color: #333333;
+  z-index: 1;
+}
+
+.timeline-photo {
+  width: 105%;
+  max-width: 200px;
+  height: 150px;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #161616;
+  border: 1px solid yellow;
+}
+
+.timeline-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  box-shadow: 0px 0px 0px rgb(255, 242, 0);
+  transform: scale(100%) scale(1);
+  transition: all 0.5s ease-out;
+}
+
+.timeline-photo img:hover {
+  transform: scale(105%) scale(1);
+  transition: all 0.5s ease-out;
+}
+
+.line-riwayat {
+  background-color: yellow;
+  width: 138px;
+  height: 6px;
+  margin: 10px auto 0 auto;
+}
+
+.my-img {
+  width: 100%; 
+  height: 100%; 
+  z-index: 2; 
+  object-fit: cover;
+  transform: translate(0);
+  transition: transform 0.3s ease-in;
+}
+
+.my-img:hover {
+  transform: translate(16px, 16px);
+  transition: transform 0.3s ease-in;
+}
+
+.my-img:hover .element-light {
+  transition: filter 0.3s ease-in;
+}
+
+.element-light {
+  width: 100%; 
+  height: 100%; 
+  top: 20px; 
+  left: 20px; 
+  border: 2px solid #FFCC00;
+}
+
+.border-kotak {
+  background-color: black;
+  border: 1px solid yellow;
+  border-radius: 10px;
+  width: 100px;
+  height: 150px;
+}
+
+.heading-study {
+  font-size: 25px;
+  font-family: 'Poppins', sans-serif;
+  color: yellow;
+  text-align: justify;
+  font-weight: bold;
+}
+
+.img-study {
+  width: 550px;
+  height: 300px;
+  border-radius: 10px;
+  border: 1px solid #444;
+}
+
+.button-next {
+  height: 50px;
+  width: 50px;
+  background-color: transparent;
+  border-radius: 100%;
+  border: 3px solid yellow;
+  color: yellow;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: 'Bebas Neue';
+  position: absolute;
+  left: 1155px;
+  top: 300px;
+  transform: scale(100%) scale(1);
+  filter: brightness(100%);
+  transition: color 0.5s ease, transform 0.5s ease-out, filter 0.5s ease;
+}
+
+.button-next:hover {
+  background-color: yellow;
+  border: 3px solid yellow;
+  color: black;
+  transform: scale(110%) scale(1);
+  filter: brightness(200%);
+  transition: transform 0.5s ease-out, color 0.5s ease, filter 0.5s ease, background-color 0.5s ease, border 0.5s ease;
+}
+
+.button-back {
+  height: 50px;
+  width: 50px;
+  background-color: transparent;
+  border-radius: 100%;
+  border: 3px solid yellow;
+  color: yellow;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: 'Bebas Neue';
+  position: absolute;
+  left: 60px;
+  top: 300px;
+  transform: scale(100%) scale(1);
+  filter: brightness(100%);
+  transition: color 0.5s ease, transform 0.5s ease-out, filter 0.5s ease;
+}
+
+.button-back:hover {
+  background-color: yellow;
+  border: 3px solid yellow;
+  color: black;
+  transform: scale(110%) scale(1);
+  filter: brightness(200%);
+  transition: transform 0.5s ease-out, color 0.5s ease, filter 0.5s ease, background-color 0.5s ease, border 0.5s ease;
+}
+
+.tooltip-inner {
+  background-color: yellow !important;
+  color: #000 !important;
+  font-weight: bold;
+  padding: 6px 12px;
+  border-radius: 6px;
+  filter: brightness(200%);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.bs-tooltip-top .tooltip-arrow::before,
+.bs-tooltip-auto[data-popper-placement^=top] .tooltip-arrow::before {
+  border-top-color: #ffcc00 !important;
+}
+
+.icon-wraper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  animation: float 3s ease-in-out infinite;
+}
+
+.icon-wraper:nth-child(2) { animation-delay: 1s; }
+.icon-wraper:nth-child(3) { animation-delay: 2s; }
+
+.speech-bubble {
+  position: relative;
+  background: yellow;
+  border-radius: 20px;
+  padding: 10px 15px;
+  color: black;
+  font-family: 'Poppins';
+  font-size: 14px;
+  max-width: 200px;
+  text-align: center;
+  font-weight: bold;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portofolio - Contact Me</title>
+
+  <link rel="stylesheet" href="bootstrap-5.0.0-dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
+  <link rel="stylesheet" href="style.kelima.css" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Coiny&family=Funnel+Display:wght@300..800&family=Lexend:wght@100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Shadows+Into+Light+Two&family=Tangerine&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap" rel="stylesheet" />
+</head>
+
+<body style="background-color: black; min-height: 100vh; overflow-x: hidden;">
+  <div class="container-fluid px-5">
+    
+    <header class="d-flex justify-content-end align-items-center pt-3">
+      <nav class="d-flex gap-5 custom-nav-container">
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link custom-nav-link active" href="../pages 1/index.utama.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link custom-nav-link active" href="index.kedua.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link custom-nav-link active" href="index.ketiga.html">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link custom-nav-link active" href="index.keempat.html">Portfolio</a>
+          </li>
+          <li class="nav-item-about">
+            <a class="nav-link custom-nav-link-about active" href="#halaman-welcome">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="row flex-grow-1 align-items-center w-100 mx-lg-5 mt-4 mb-5">
+      
+      <div class="col-lg-6 px-4 mb-5 mb-lg-0">
+        <div class="style-rekayasa mb-3 fw-bold" style="letter-spacing: 2px;">SAY HELLO</div>
+        
+        <h1 class="style-muhammad" id="typewriter">BANGUN HAL</h1>
+        <h1 class="style-andika" style="color: yellow;">HEBAT</h1>
+
+        <p class="style-slogan text-secondary mb-5" style="max-width: 480px; line-height: 1.7;">
+          Mari berkolaborasi untuk menciptakan sesuatu yang luar biasa dan memberikan dampak positif bagi dunia! Saya siap untuk bekerja sama dengan Anda dalam mewujudkan ide-ide kreatif dan inovatif yang dapat memberikan manfaat bagi banyak orang.
+        </p>
+
+        <div class="d-flex gap-3" style="margin-top: -10px;">
+          <a href=""></a>
+          <button type="button" class="social-media">
+            <i class="bi bi-github fs-3 icon-media"></i>
+          </button>
+
+          <a href="../pages 4/index.keempat.html"></a>
+          <button type="button" class="social-media">
+            <i class="bi bi-instagram fs-3 icon-media"></i>
+          </button>
+
+          <a href="../pages 2/index.kedua.html"></a>
+          <button type="button" class="social-media">
+            <i class="bi bi-whatsapp fs-3 icon-media"></i>
+          </button>
+        </div>
+
+        <div class="d-flex gap-3 mt-5">
+          <a href="../pages 1/index.utama.html">
+            <button type="button" class="button-next" data-bs-toggle="tooltip" data-bs-placement="top" title="Halaman Selanjutnya">
+              <span class="arrow-icon"></span> >
+            </button>
+          </a>
+
+          <a href="index.keempat.html">
+            <button type="button" class="button-back" data-bs-toggle="tooltip" data-bs-placement="top" title="Halaman Sebelumnya">
+              < <span class="arrow-icon"></span>
+            </button>
+          </a>
+        </div>
+      </div>
+
+      <div class="col-lg-6 d-flex justify-content-center px-4">
+        <div class="contact-card">
+          <form>
+            <div class="row g-3">
+              
+              <div class="col-md-6">
+                <label class="form-label-custom d-block">SIAPA NAMA ANDA</label>
+                <input type="text" class="form-control-custom w-100" placeholder="Type Here..." required />
+              </div>
+              
+              <div class="col-md-6">
+                <label class="form-label-custom d-block">ALAMAT EMAIL</label>
+                <input type="email" class="form-control-custom w-100" placeholder="Type Here..." required />
+              </div>
+              
+              <div class="col-md-6">
+                <label class="form-label-custom d-block">SUBJEK</label>
+                <input type="text" class="form-control-custom w-100" placeholder="Type Here..." required />
+              </div>
+              
+              <div class="col-md-6">
+                <label class="form-label-custom d-block">NOMOR TELEPON</label>
+                <input type="tel" class="form-control-custom w-100" placeholder="Type Here..." required />
+              </div>
+
+              <div class="col-12 mt-4">
+                <label class="form-label-custom d-block">PESAN ANDA</label>
+                <textarea class="form-control-custom w-100" rows="4" placeholder="Type Here..." required></textarea>
+              </div>
+
+              <div class="col-12 text-end mt-4">
+                <button type="submit" class="btn-submit" id="KIRIM_PESAN">KIRIM PESAN</button>
+              </div>
+
+            </div>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="bootstrap-5.0.0-dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+      return new bootstrap.Tooltip(tooltipTriggerEl);
+    });
+
+    document.addEventListener("DOMContentLoaded", function () {
+      const textToType = "BANGUN HAL";
+      const typeWriterElement = document.getElementById("typewriter");
+
+      let charIndex = 0;
+      let isDeleting = false;
+
+      function typeEffect() {
+        const currentText = textToType.substring(0, charIndex);
+        typeWriterElement.innerHTML = currentText + '<span class="cursor text-warning">|</span>';
+
+        let typeSpeed = isDeleting ? 100 : 150;
+
+        if (!isDeleting && charIndex < textToType.length) {
+          charIndex++;
+          setTimeout(typeEffect, typeSpeed);
+        } else if (isDeleting && charIndex > 0) {
+          charIndex--;
+          setTimeout(typeEffect, typeSpeed);
+        } else {
+          isDeleting = !isDeleting;
+          let pauseTime = isDeleting ? 3000 : 500;
+          setTimeout(typeEffect, pauseTime);
+        }
+      }
+
+      typeEffect();
+
+      const form = document.querySelector("form");
+      form.addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        if (!form.checkValidity()) {
+          alert("Harap lengkapi semua kolom yang dibutuhkan sebelum mengirim pesan.");
+          form.reportValidity();
+          return;
+        }
+
+        const confirmed = confirm("Apakah data yang dimasukkan sudah benar?");
+        if (confirmed) {
+          alert("Anda berhasil mengirim pesan!");
+          form.reset();
+        } else {
+          alert("Pengiriman dibatalkan. Periksa kembali data Anda.");
+        }
+      });
+    }); 
+  </script>
+</body>
+</html>

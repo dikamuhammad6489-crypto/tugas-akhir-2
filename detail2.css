@@ -1,0 +1,303 @@
+body {
+  background-color: black;
+  margin: 0;
+  animation: fadeIn 1.5s ease-out;
+  height: 110vh;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.background-welcome {
+  background-color: black;
+  height: 600px;
+}
+
+.custom-nav-container {
+  background-color: black;
+  border: 1px solid yellow;
+  border-radius: 10px;
+  display: inline-flex;
+  align-items: center;
+  width: auto;
+  height: 60px;
+  padding: 1px 3px;
+}
+
+.custom-nav-link {
+  color: yellow;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: bold;
+  filter: brightness(100%);
+  transition: color 0.3s ease, filter 0.3s ease;
+}
+
+.custom-nav-link:hover {
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+  filter: brightness(200%);
+  transition: color 0.3s ease, filter 0.3s ease;
+}
+
+.nav-item {
+  margin-right: 5px;
+  margin-left: 5px;
+  background-color: black;
+  color: yellow;
+  border-radius: 10px;
+  width: auto;
+  height: 40px;
+  box-sizing: border-box;
+  filter: brightness(100%);
+  transition: background-color 0.5s ease, color 0.3s ease, filter 0.3s ease;
+}
+
+.nav-item:hover {
+  background-color: yellow;
+  color: black;
+  border-radius: 10px;
+  width: auto;
+  height: 40px;
+  box-sizing: border-box;
+  filter: brightness(200%);
+  transition: background-color 0.5s ease, color 0.3s ease;
+}
+
+.nav-item-skill:hover {
+  width: auto;
+  background-color: black;
+  color: yellow;
+  border-radius: 10px;
+  box-sizing: border-box;
+  filter: brightness(100%);
+  transition: background-color 0.5s ease, color 0.3s ease, filter 0.3s ease;
+}
+
+.nav-item-skill {
+  width: auto;
+  background-color: yellow;
+  color: black;
+  border-radius: 10px;
+  box-sizing: border-box;
+  filter: brightness(100%);
+  transition: background-color 0.5s ease, color 0.3s ease;
+}
+
+.custom-nav-link-skill:hover {
+  color: yellow;
+  text-decoration: none;
+  font-weight: bold;
+  filter: brightness(200%);
+  transition: color 0.3s ease, filter 0.3s ease;
+}
+
+.custom-nav-link-skill {
+  font-size: 16px;
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+  filter: brightness(200%);
+  transition: color 0.3s ease, filter 0.3s ease;
+}
+
+.button-back {
+  height: 40px;
+  width: 250px;
+  background-color: transparent;
+  border-radius: 15px;
+  border: 3px solid yellow;
+  color: yellow;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+  position: absolute;
+  left: 9%;
+  top: 6%;
+  transform: scale(100%) scale(1);
+  transition: color 0.5s ease, transform 0.5s ease-out, filter 0.5s ease;
+  filter: brightness(100%);
+}
+
+.button-back:hover {
+  background-color: yellow;
+  border: 3px solid yellow;
+  color: black;
+  transform: scale(105%) scale(1);
+  filter: brightness(200%);
+  transition: transform 0.5s ease-out, color 0.5s ease, filter 0.5s ease, background-color 0.5s ease, border 0.5s ease;
+}
+
+.card-img {
+  border: 2px yellow;
+  height: 300px;
+  max-width: 600px;
+  width: 100%;
+  overflow: hidden;
+  transform: scale(100%) scale(1);
+  transition: all 0.4s ease;
+}
+
+.card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transform: scale(100%) scale(1);
+  transition: all 0.4s ease;
+}
+
+.card-img img:hover {
+  transform: scale(105%) scale(1);
+  transition: all 0.4s ease-out;
+}
+
+.timeline,
+.role,
+.project-type,
+.status {
+  position: relative;
+  margin: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  width: 200px;
+  height: 70px;
+  border: 1px solid #555;
+  border-radius: 10px;
+  background-color: transparent;
+}
+
+.card-custom {
+  background-color: #111111;
+  border: 1px solid #222222;
+  border-radius: 14px !important;
+  transition: transform 0.3s ease, border-color 0.3s ease, background-color 0.4s ease;
+}
+
+.card-custom:hover {
+  box-shadow: 0 4px 14px rgba(255, 238, 0);
+  background-color: yellow;
+  transition: border-color 0.4s ease, box-shadow 0.4s ease, background-color 0.4s ease;
+}
+
+.text-keterangan {
+  font-weight: bold;
+  color: white;
+  transition: color 0.4s ease;
+}
+
+.card-custom:hover .text-keterangan {
+  color: black;
+  transition: color 0.4s ease;
+}
+
+.card-content {
+  height: 555px;
+  background-color: #333;
+  border: 1px solid #555;
+  box-shadow: 0 0px 0px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  transform: translate(0%, 0%);
+  transition: background-color 0.4s ease, box-shadow 0.4s ease, transform 0.4s ease;
+}
+
+.card-content:hover {
+  background-color: yellow;
+  box-shadow: 0 6px 12px rgb(255, 238, 0);
+  transform: translate(0%, -2%);
+  transition: background-color 0.4s ease, box-shadow 0.4s ease, transform 0.4s ease;
+}
+
+.style-rekayasa {
+  color: yellow;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  align-items: flex-start;
+  font-weight: bold;
+  padding: 4px;
+  transition: color 0.3s ease;
+}
+
+.card-content:hover .style-rekayasa {
+  color: black;
+  transition: color 0.3s ease;
+}
+
+.style-muhammad {
+  line-height: 1;
+  font-family: 'Poppins', sans-serif;
+  font-size: 60px;
+  font-weight: bold;
+  color: yellow;
+  transition: color 0.5s ease-out;
+}
+
+.card-content:hover .style-muhammad {
+  color: black;
+  transition: color 0.5s ease-out;
+}
+
+.style-andika {
+  font-family: 'Poppins', sans-serif;
+  font-size: 60px;
+  font-weight: bold;
+  color: white;
+  transition: color 0.5s ease-out;
+}
+
+.card-content:hover .style-andika {
+  color: black;
+  transition: color 0.5s ease-out;
+}
+
+.cursor {
+  color: #FFFF00;
+  font-weight: bold;
+  animation: blink 0.8s infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.p-deskripsi {
+  color: #555;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 5px;
+  margin-bottom: 4px;
+}
+
+.p-text {
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  text-align: justify; 
+  font-size: 14px; 
+  line-height: 1.7; 
+  flex-grow: 1;
+}
+
+.card-content:hover .p-text {
+  color: black;
+}
+
+.p-tools {
+  color: #555;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 5px;
+  margin-bottom: 4px;
+}
